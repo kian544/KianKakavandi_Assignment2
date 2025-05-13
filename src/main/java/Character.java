@@ -5,8 +5,8 @@ public abstract class Character {
     protected int health;
     protected int strength;
     protected int craft;
-    //protected List<Item> inventory = new ArrayList<>();
-    //protected List<Item> inUse = new ArrayList<>();
+    protected List<Item> inventory = new ArrayList<>();
+    protected List<Item> inUse = new ArrayList<>();
 
     public Character(String name, int health, int strength, int craft) {
         this.name = name;
@@ -19,5 +19,11 @@ public abstract class Character {
         return this.strength;
     }
 
+    public int getTotalHealth(){
+        return this.health;
+    }
 
+    public int getTotalCraft(){
+        return this.craft;
+    }
 }
