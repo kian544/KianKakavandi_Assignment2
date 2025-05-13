@@ -1,3 +1,10 @@
+/**
+ * Assignment 2
+ * Kian Kakavandi, 2091078
+ * For SE350 section 601
+ *
+ * User created character, takes in class, warrior or wizard, then name.
+ */
 import java.util.*;
 
 public abstract class Character {

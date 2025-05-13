@@ -1,3 +1,10 @@
+/**
+ * Assignment 2
+ * Kian Kakavandi, 2091078
+ * For SE350 section 601
+ *
+ * Monster for strength, does not use crafting
+ */
 import java.util.Random;
 
 public class strengthMonster implements Monster{

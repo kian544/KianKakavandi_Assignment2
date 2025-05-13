@@ -1,3 +1,10 @@
+/**
+ * Assignment 2
+ * Kian Kakavandi, 2091078
+ * For SE350 section 601
+ *
+ * Connecting doors to chambers, and allow for user to go back to previous door/chamber
+ */
 public class Door {
     private final Chamber a, b;
     private final Monster guard;

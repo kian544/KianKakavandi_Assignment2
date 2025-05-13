@@ -1,3 +1,10 @@
+/**
+ * Assignment 2
+ * Kian Kakavandi, 2091078
+ * For SE350 section 601
+ *
+ * Allows for player to move between chambers
+ */
 public class Move implements Action {
     private Dungeon dungeon;
     private Chamber destination;

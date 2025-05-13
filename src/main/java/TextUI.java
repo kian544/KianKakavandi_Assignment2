@@ -1,3 +1,10 @@
+/**
+ * Assignment 2
+ * Kian Kakavandi, 2091078
+ * For SE350 section 601
+ *
+ * TextUI as given but with the TO-DO completed for the monster stats
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

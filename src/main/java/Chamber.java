@@ -1,5 +1,15 @@
+/**
+ * Assignment 2
+ * Kian Kakavandi, 2091078
+ * For SE350 section 601
+ *
+ * Setting up chambers, door connections, and items
+ */
+
+
 import java.util.*;
 public class Chamber {
+
     private List<Item> items = new ArrayList<>();
     private List<Door> doors = new ArrayList<>();
 

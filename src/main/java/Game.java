@@ -1,3 +1,10 @@
+/**
+ * Assignment 2
+ * Kian Kakavandi, 2091078
+ * For SE350 section 601
+ *
+ * Used the provided game file, but had some more fun with it and randomized certain things like monsters
+ */
 import java.util.Random;
 import java.util.Scanner;
 

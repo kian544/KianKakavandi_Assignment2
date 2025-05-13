@@ -1,3 +1,10 @@
+/**
+ * Assignment 2
+ * Kian Kakavandi, 2091078
+ * For SE350 section 601
+ *
+ * allows for player to pick up item before fight
+ */
 public class Pick implements Action {
     private Dungeon dungeon;
     private Item item;

@@ -1,3 +1,10 @@
+/**
+ * Assignment 2
+ * Kian Kakavandi, 2091078
+ * For SE350 section 601
+ *
+ * Monsters that only use their craft ability, and lack all strength
+ */
 import java.util.Random;
 
 public class craftMonster implements Monster{

@@ -1,3 +1,10 @@
+/**
+ * Assignment 2
+ * Kian Kakavandi, 2091078
+ * For SE350 section 601
+ *
+ * Fight code, involves roll for attack, as well as taking damage and maintaining damage memory
+ */
 import java.util.Random;
 
 public class Fight implements Action {

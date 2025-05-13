@@ -1,3 +1,10 @@
+/**
+ * Assignment 2
+ * Kian Kakavandi, 2091078
+ * For SE350 section 601
+ *
+ * Prints invalid input errors
+ */
 public class PrintError implements Action {
     private Dungeon dungeon;
     private Exception error;

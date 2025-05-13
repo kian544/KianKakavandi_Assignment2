@@ -1,3 +1,10 @@
+/**
+ * Assignment 2
+ * Kian Kakavandi, 2091078
+ * For SE350 section 601
+ *
+ * Dungeon to hold all chambers, doors, items, monsters, and the player
+ */
 import java.util.*;
 
 public class Dungeon {
