@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class strengthMonster {
+public class strengthMonster implements Monster{
     private Random rand=new Random();
     private final String name;
     private final int strength;
@@ -13,17 +13,38 @@ public class strengthMonster {
         this.craft = craft;
         this.health = health;
     }
-    public boolean usingStrength(){ return craft==0; }
-    public int getHealth(){ return health; }
-    public void takeDamage(int damage){ health-=damage; }
-    public String getName(){ return name; }
-
-    public int MonstersRoll(){
-        return rand.nextInt(6) + 1 + (usingStrength() ? strength:craft);
+    @Override
+    public boolean usingStrength() {
+        return craft == 0;
     }
 
     @Override
-    public String toString(){
+    public boolean usingCraft() {
+        return !usingStrength();
+    }
+
+    @Override
+    public int getHealth() {
+        return health;
+    }
+
+    @Override
+    public void takeDamage(int damage) {
+        health -= damage;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public int MonstersRoll() {
+        return rand.nextInt(6) + 1 + (usingStrength() ? strength : craft);
+    }
+
+    @Override
+    public String toString() {
         return name + " " + strength + " " + craft + " " + health;
     }
 }

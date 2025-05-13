@@ -7,16 +7,23 @@ public class TextUI {
     public void play(Dungeon d){
         while(!d.isFinished()){
             print(d);
-            Action a=ask(d);
+            Action a = ask(d);
             a.execute();
         }
+
+        if (d.getPlayer().getTotalHealth() <= 0) {
+            System.out.println("You died! Game over.");
+        } else {
+            System.out.println("🎉 Dungeon completed! Congratulations! 🎉");
+        }
     }
+
     //Printing the current room
     private void print(Dungeon d){
         Chamber r = d.getCurrentChamber();
         StringBuilder s=new StringBuilder();
-        s.append("You're in a chamber with" + r.getDoors().size()+"doors\n");
-        s.append("There are"+ r.getItems().size()+"items in the chamber!\n");
+        s.append("You're in a chamber with " + r.getDoors().size()+" doors\n");
+        s.append("There are "+ r.getItems().size()+" items in the chamber!\n");
         for (Door door : r.getDoors()) {
             Monster m = door.getMonster();
             if (m != null && m.getHealth() > 0) {
@@ -28,7 +35,7 @@ public class TextUI {
     //Asks user for action
     private Action ask(Dungeon d){
         StringBuilder s=new StringBuilder();
-        s.append("What do you want to do?");
+        s.append("What do you want to do? \n");
         List<Action> actions=d.getActions();
         for(int i=0;i<actions.size();i++){
             Action a=actions.get(i);
