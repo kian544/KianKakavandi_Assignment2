@@ -12,8 +12,8 @@ public class Game {
 
         //Connecting chambers to doors
         Door.connect(chambers[0], chambers[1]);
-        Door.connect(chambers[1], chambers[2], new Monster("Goblin", 1, 0, 3));
-        Door.connect(chambers[2], chambers[3], new Monster("Spider", 3, 0, 5));
+        Door.connect(chambers[1], chambers[2], new strengthMonster("Goblin", 1, 0, 3));
+        Door.connect(chambers[2], chambers[3], new strengthMonster("Spider", 3, 0, 5));
         Door.connect(chambers[3], chambers[4]);
 
         Character player = new Wizard("Gandalf");
