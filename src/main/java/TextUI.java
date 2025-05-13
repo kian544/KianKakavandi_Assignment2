@@ -17,7 +17,12 @@ public class TextUI {
         StringBuilder s=new StringBuilder();
         s.append("You're in a chamber with" + r.getDoors().size()+"doors\n");
         s.append("There are"+ r.getItems().size()+"items in the chamber!\n");
-        //TODO: print for each door which monster is there, how strong, how skilled, and its health
+        for (Door door : r.getDoors()) {
+            Monster m = door.getMonster();
+            if (m != null && m.getHealth() > 0) {
+                s.append("Door guarded by: ").append(m.toString()).append("\n");
+            }
+        }
         System.out.println(s.toString());
     }
     //Asks user for action
