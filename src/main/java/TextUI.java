@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class TextUI {
+/*public class TextUI {
     public void play(Dungeon d){
         while(!d.isFinished()){
             print(d);
@@ -41,3 +41,4 @@ public class TextUI {
         }
     }
 }
+*/

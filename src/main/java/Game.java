@@ -1,4 +1,4 @@
-import javax.swing.plaf.TextUI;
+/*import javax.swing.plaf.TextUI;
 
 public class Game {
     public static void main(String[] args) {
@@ -24,4 +24,4 @@ public class Game {
         TextUI ui = new TextUI();
         ui.play(d);
     }
-}
+}*/
